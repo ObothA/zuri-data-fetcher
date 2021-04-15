@@ -1,4 +1,5 @@
-# zuri-data-fetcher
+# zuri-data-fe
+This script fetches data and writes to a file.
 
-This is a script that
-1. Checks if the result directory exists
+# To Run,
+node app.js
