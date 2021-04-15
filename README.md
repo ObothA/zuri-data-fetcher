@@ -1,4 +1,4 @@
-# zuri-data-fe
+# zuri-data-fetcher
 This script fetches data and writes to a file.
 
 # To Run,
