@@ -41,12 +41,12 @@ const resultExists = checkIfDirectoryExists('result')
 if (resultExists) {
   console.log('[*] result directory exists.');
   console.log();
+
   deleteDirectory('result');
 
   console.log('[+] Recreating directory... ');
   console.log();
   createDirectory('result');
-  console.log();
 } else {
   console.log('[*] result directory does not exist.');
   console.log();
