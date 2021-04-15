@@ -12,21 +12,29 @@ const checkIfDirectoryExists = (directory) => {
     return fs.existsSync(directory);
   } catch (error){
     console.log(error);
+    console.log();
   }
 };
 
 const createDirectory = (directory) => {
-  fs.mkdirSync(directory);
+  try {
+    fs.mkdirSync(directory);
+    console.log('[*] result directory created.');
+    console.log();
+  } catch (error) {
+    console.log(error);
+    console.log();
+  }
 };
 
 const resultExists = checkIfDirectoryExists('result')
 
 if (resultExists) {
-  console.log('[*] result exists.');
+  console.log('[*] result directory exists.');
   console.log();
 } else {
-  console.log('[*] result does not exist.');
+  console.log('[*] result directory does not exist.');
   console.log();
-
+  createDirectory('result');
 }
 
